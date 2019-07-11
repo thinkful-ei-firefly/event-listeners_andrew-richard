@@ -24,7 +24,7 @@ $("#js-shopping-list-form").submit(e => {
 
   //Check off an item
   //on event "Check Item" pressed
-  $('.shopping-list').on('click', event => {
+  $('.shopping-list').on('click', '.shopping-item-toggle', event => {
     event.preventDefault();
     $(event.target).closest($('li')).find('.shopping-item').toggleClass('shopping-item__checked')
   });
