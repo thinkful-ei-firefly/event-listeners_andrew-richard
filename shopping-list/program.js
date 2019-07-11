@@ -28,12 +28,6 @@ $("#js-shopping-list-form").submit(e => {
     event.preventDefault();
     $(event.target).closest($('li')).find('.shopping-item').toggleClass('shopping-item__checked')
   });
-  //event.preventDefault();
-  //if target is .shopping-item
-  //Change targeted .shopping-item to .shopping-item__checked
-  //else
-  //change targeted .shopping-item__checked to .shopping-item
-
 
 
   //Delete an item
