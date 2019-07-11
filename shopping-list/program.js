@@ -32,8 +32,13 @@ $("#js-shopping-list-form").submit(e => {
 
   //Delete an item
   //on event "delete" pressed
-  //event.preventDefault();
-  //delete targeted li
+  $('.shopping-list').on('click', '.shopping-item-delete', event => {
+    event.preventDefault();
+    console.log('target aquired');
+    //delete targeted li
+    $(event.target).closest($('li')).remove();
+
+  });
 
 }
 
