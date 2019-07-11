@@ -1,14 +1,15 @@
 'use strict';
 function program(){
 
-  //Add an item
-  //on event "Add item" button pressed
-  $("#add-item-button").submit(e => {
-    event.preventDefault();
+//Add an item
+//on event "Add item" button pressed
+$("#js-shopping-list-form").submit(e => {
+    e.preventDefault();
+    let input = $('#shopping-list-entry').val();
     //push following html code
     $(`
         <li>
-            <span class="shopping-item">INPUT</span>
+            <span class="shopping-item">${input}</span>
             <div class="shopping-item-controls">
             <button class="shopping-item-toggle">
             <span class="button-label">check</span>
