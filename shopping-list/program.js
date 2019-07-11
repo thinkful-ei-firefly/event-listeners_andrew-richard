@@ -6,6 +6,7 @@ function program(){
 $("#js-shopping-list-form").submit(e => {
     e.preventDefault();
     let input = $('#shopping-list-entry').val();
+    $('#shopping-list-entry').val('');
     //push following html code
     $(`
         <li>
