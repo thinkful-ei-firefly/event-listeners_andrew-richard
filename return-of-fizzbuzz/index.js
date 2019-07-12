@@ -41,7 +41,7 @@ function submitHandle(){
     let htmlResults = [];
     for (let i = 0; i < fizzbuzzResults.length; i++) {
       htmlResults.push(`
-        <div class="fizz-buzz-item" "${classResults[i]}">
+        <div class="fizz-buzz-item ${classResults[i]}">
         <span>${fizzbuzzResults[i]}</span>
         </div>`);
     }
